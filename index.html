@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>meme museum</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+	<style>
+    	html{font-family: 'Playfair Display', serif;}
+    	#bigtitle{
+    		text-align: center;
+    		padding: 100px;
+
+    	}
+    	
+    	#memepic{
+    		width: 1000px;
+    		padding-top: 50px;
+    		margin: auto;
+    		display: flex;
+    		flex-direction: column;
+    		align-items: center;
+    		flex-wrap: wrap;
+    		justify-content: space-between;
+    		place-item:  center;
+    		text-align: center;
+    	}
+    	.memefra{
+  		position: absolute;
+  		top: 50%;
+  		width: 50%;
+  		text-align: center;
+  		}
+
+    	h1{
+    		color: white;
+    	}
+
+    	a{
+    		font-size: 2em; color: white;
+    	}
+    </style>		
+
+
+</head>
+<body style="background-color: lightpink;">
+
+	<header>
+		<div id="bigtitle" style="font-size: 40px; margin-top: 20px; padding-top: 150px;padding-bottom: 40px;">
+			<h1>
+			Meme Museum	
+			</h1>
+		
+		</div>
+	
+
+	</header>
+	<section style="margin-bottom: 320px;">
+		<div id="content">
+			<div id="memepic">
+				<a>today's meme</a>
+				<img id="realmeme" src="gayoungzzal.png">
+			
+				
+			</div>
+			<div id ="memefra">
+				<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="memeframe.png" alt="gayoungzzal.png" width="10" height="10">
+			</div>
+
+			
+
+		</div>
+
+		<script type="text/javascript">
+
+		
+		function bigImg(x) {
+  			x.style.height = "800px";
+  			x.style.width = "1100px";
+		}
+
+		function normalImg(x) {
+  			x.style.height = "10px";
+  			x.style.width = "10px";
+		}
+
+
+		</script>
+	</section>
+
+</body>
+</html>
